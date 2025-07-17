@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sambath portfolio</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            /* Navbar */
+            .navbar {
+                background: rgb(45, 44, 44);
+                padding: 15px 30px;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 1000;
+            }
+
+            .navbar a {
+                margin-right: 15px;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            /* Hero */
+            .hero-container {
+                position: relative;
+                margin-top: 40px;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .hero-container img {
+                width: 100%;
+                display: block;
+            }
+
+            .hero-text {
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+                color: white;
+                text-align: center;
+                font-size: 40px;
+                font-weight: bold;
+                text-shadow: 1px 1px 5px black;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: opacity 0.5s ease;
+                pointer-events: none;
+            }
+
+            .hero-container:hover .hero-text {
+                opacity: 4;
+            }
+
+            /* about */
+            .about-section {
+                padding: 50px 20px;
+                text-align: center;
+            }
+
+            .about-section img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
+
+            .about-section p {
+                font-size: 18px;
+                color: teal;
+                margin: 0;
+            }
+
+            .divideline {
+                width: 200px;
+                height: 2px;
+                background-color: teal;
+                margin: 20px auto;
+            }
+
+            .about-section h2 {
+                font-size: 24px;
+                margin-top: 20px;
+            }
+
+            /* project */
+            .project-section {
+                padding: 10px 20px;
+                text-align: center;
+            }
+
+            .project {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+            }
+
+            .project img {
+                width: 300px;
+                height: auto;
+                border-radius: 10px;
+                margin: 10px;
+            }
+
+            .project-info {
+                max-width: 400px;
+                text-align: left;
+                margin: 10px;
+            }
+
+            /* Gallery */
+            .gallery-section {
+                padding: 20px 20px;
+                text-align: center;
+            }
+
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+
+            .gallery img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                object-fit: cover;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a>About</a>
+            <a>Work</a>
+            <a>Contact</a>
+        </div>
+
+        <!-- hero-->
+        <div class="hero-container">
+            <img src="deakin.jpeg" />
+            <div class="hero-text">hey, I'm Sambath</div>
+        </div>
+
+        <!-- About-->
+        <div class="about-section">
+            <img src="dog 2.png" />
+            <p>
+                I am a full stack developer student in Deakin University,
+                Melbourne Burwood
+            </p>
+            <div class="divideline"></div>
+            <h2>Here's what i've done so far</h2>
+        </div>
+
+        <!--project-->
+        <div class="project-section">
+            <div class="project">
+                <img src="cafe.jpg" />
+                <div class="project-info">
+                    <h3>Cafe website</h3>
+
+                    <p>
+                        A website built with javascript framework which is
+                        Vue.js combine with HTML and CSS showing student
+                        creativity and coding skills
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <div class="project">
+                <img src="bank.avif" />
+                <div class="project-info">
+                    <h3>banking system</h3>
+
+                    <p>
+                        using C#, building little by little to banking system
+                        that can be withdraw, deposit and transfer with multiple
+                        account
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="divideline"></div>
+
+        <div class="gallery-section">
+            <h2>My photo</h2>
+            <div class="gallery">
+                <img src="pic1.jpg" />
+                <img src="pic6.jpg" />
+                <img src="pic3.jpg" />
+                <img src="pic4.jpg" />
+                <img src="pic5.jpg" />
+                <img src="pic7.jpg" />
+            </div>
+        </div>
+    </body>
+</html>
